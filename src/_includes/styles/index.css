@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* Use crimson pro for heading */
+.crimson-pro {
+    font-family: "Crimson Pro", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* Use manrope for normal text */
+.manrope {  
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.custom-scroll-x::-webkit-scrollbar { width: 8px; height: 8px; }
+.custom-scroll-x::-webkit-scrollbar-button { width: 0px; }
+.custom-scroll-x::-webkit-scrollbar-track-piece { background-color: lightgray; border-radius: 99px; margin: 0 20vw;}
+.custom-scroll-x::-webkit-scrollbar-thumb { background-color: gray; border-radius: 99px;}
+
+.dark .custom-scroll-x::-webkit-scrollbar-track-piece { background-color: #1b2026; border-radius: 99px; margin: 0 20vw;}
+.dark .custom-scroll-x::-webkit-scrollbar-thumb { background-color: #63646c; border-radius: 99px;}

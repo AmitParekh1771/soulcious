@@ -1,0 +1,32 @@
+{
+  "name": "soulcious",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmitParekh1771/soulcious.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmitParekh1771/soulcious/issues"
+  },
+  "homepage": "https://github.com/AmitParekh1771/soulcious#readme",
+  "description": "",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@tailwindcss/postcss": "^4.1.11",
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.0.7",
+    "html-minifier": "^4.0.0",
+    "path": "^0.12.7",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11",
+    "terser": "^5.43.1"
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}" class="scroll-smooth">
+<head>
+    <title>{{ title if title else site.title }}</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ description if description else site.description }}">
+    <meta name="keywords" content="{{ keywords if keywords else site.keywords }}">
+    <meta name="author" content="{{ author.name if author.name else site.author.name }}">
+
+    <meta name="twitter:creator" content="{{ author.twitter if author.twitter else site.author.twitter }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="{{ site.url + page.url }}">
+    <meta name="twitter:title" content="{{ title if title else site.title }}">
+    <meta name="twitter:description" content="{{ description if description else site.description }}">
+    <meta name="twitter:image" content="{{ site.url + (image if image else site.image) }}">
+
+    <meta property="og:url" content="{{ site.url + page.url }}">
+    <meta property="og:type" content="{{ type if type else site.type }}">
+    <meta property="og:title" content="{{ title if title else site.title }}">
+    <meta property="og:image" content="{{ site.url + (image if image else site.image) }}">
+    <meta property="og:description" content="{{ description if description else site.description }}">
+    <meta property="og:site_name" content="{{ site.name }}">
+    <meta property="og:locale" content="{{ site.lang }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6SBMZF1LGX"></script>
+    <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-6SBMZF1LGX');</script>
+
+    <link rel="shortcut icon" href="{{ site.favicon }}" type="image/x-icon">
+
+    <style>{% set css %}{% include "styles/index.css" %}{% endset %}{{ css | postcss | safe }}</style>
+</head>
+<body class="manrope">
+    {{ content | safe }}
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <script src="/main.js" async></script>
+</body>
+</html>
