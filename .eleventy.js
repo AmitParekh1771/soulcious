@@ -6,6 +6,7 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 
 module.exports = function(eleventyConfig) {
+    eleventyConfig.addPassthroughCopy("./src/favicon.ico");
     eleventyConfig.addPassthroughCopy("./src/assets/");
 
     eleventyConfig.addTransform("htmlmin", function(content) {

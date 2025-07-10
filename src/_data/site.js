@@ -1,15 +1,15 @@
 module.exports = {
 	lang: "en",
-	name: "Amit Parekh",
-	title: "Amit Parekh - Craft A Stunning Web Experience",
-	keywords: "web, design, portfolio",
-	url: "https://amit-parekh.netlify.app",
+	name: "Soulcious",
+	title: "Soulcious | 1-on-1 sessions on Bhagavad Gita",
+	keywords: "bhagavad, gita, sessions, course, live",
+	url: "https://soulcious.netlify.app",
 	type: "website",
-	description: "I'll Turn Your Boring Website Into A Stunning Web Experience That Takes <1s To Load",
-	image: "/assets/images/featuredImage.webp",
-	favicon: "/assets/icons/favicon.ico",
+	description: "Discover the wisdom of the Bhagavad Gita one shloka at a time, blending ancient teachings with modern insights. Get into 1-on-1 session with me, I share Bhagvad Gita knowledge that inspire and uplift.",
+	image: "/assets/images/hero.png",
+	favicon: "/favicon.ico",
 	author: {
-		name: "Amit Parekh",
-		twitter: "@amitptwt"
+		name: "Shivam Parekh",
+		twitter: "@conscious_soull"
 	}
 }
